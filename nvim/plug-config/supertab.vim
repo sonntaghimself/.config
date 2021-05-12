@@ -1,0 +1,5 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""                                  Supertab                                  "
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabDefaultCompletionType = "<Right>"
