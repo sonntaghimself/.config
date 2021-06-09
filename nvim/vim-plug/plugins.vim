@@ -35,6 +35,10 @@ Plug 'roxma/nvim-yarp', {'for': 'r'}
 Plug 'gaalcaras/ncm-R', {'for': 'r'}
 Plug 'jalvesaq/Nvim-R', {'for': 'r','branch': 'stable'}
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+" templates
+Plug 'tibabit/vim-templates'
+
+" Plug 'brennier/quicktex'
 " Plug 'ncm2/ncm2-ultisnips', {'for': 'r'}
 " Plug 'ncm2/ncm2-bufword', {'for': 'r'}
 " Plug 'ncm2/ncm2-path', {'for': 'r'}
@@ -46,7 +50,8 @@ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 Plug 'mhinz/vim-startify'
 " LaTex
 Plug 'lervag/vimtex'
-
+" key bindings
+Plug 'liuchengxu/vim-which-key'
 
 call plug#end()
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

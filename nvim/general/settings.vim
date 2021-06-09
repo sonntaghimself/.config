@@ -24,6 +24,9 @@ syntax on
 set splitright splitright
 set mouse=a
 set updatetime=100
+set foldmethod=marker
+set foldmarker={{{{{,}}}}}
+
 
 " turn off arrow keys
 inoremap <Up>    <NOP>
@@ -41,6 +44,10 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 tnoremap <Esc> <C-\><C-n>
+
+" remapping folding
+nnoremap <space> za
+" nnoremap za <space>
 
 " leader keys
 let mapleader = ";"

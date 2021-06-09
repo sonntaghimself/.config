@@ -2,8 +2,9 @@
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/vim-plug/plugins.vim
 
-" TEXT SUPPORT
+" TEX SUPPORT
 source $HOME/.config/nvim/plug-config/vimtex.vim
+source $HOME/.config/nvim/plug-config/vim-templates.vim
 " source $HOME/.config/nvim/plug-config/markdown.vim
 " source $HOME/.config/nvim/plug-config/markdown-preview.vim
 
@@ -19,11 +20,12 @@ source $HOME/.config/nvim/plug-config/nerdtree.vim
 source $HOME/.config/nvim/plug-config/syntastic.vim
 source $HOME/.config/nvim/plug-config/deoplete.vim
 source $HOME/.config/nvim/plug-config/ultisnips.vim
-source $HOME/.config/nvim/plug-config/autopairs.vim
 source $HOME/.config/nvim/plug-config/ncm2.vim
 source $HOME/.config/nvim/plug-config/ale.vim
 source $HOME/.config/nvim/plug-config/supertab.vim
 
+" Key bindings
+source $HOME/.config/nvim/keys/which-key.vim
 
 " REPL
 source $HOME/.config/nvim/plug-config/vimcmdline.vim
