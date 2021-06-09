@@ -2,7 +2,7 @@
 % Created    :{{TIMESTAMP}}
 % Mail       :{{EMAIL}}
     
-\documentclass{beamer}
+\documentclass[8pt]{beamer}
 
 
 \title{{{CURSOR}}}
