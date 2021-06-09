@@ -34,6 +34,7 @@ let g:which_key_map['i'] = [ 'VimtexTocOpen'         , 'index' ]
 let g:which_key_map['k'] = [ 'VimtexClean'           , 'kill aux' ]
 let g:which_key_map['l'] = [ 'VimtexErrors'          , 'error log' ]
 let g:which_key_map['r'] = [ ':source $MYVIMRC'      , 'reload config' ]
+let g:which_key_map['n'] = [ 'NERDTree'              , 'Nerdtree' ]
 let g:which_key_map.c = 'count'
 let g:which_key_map.u = 'undo'
 
@@ -63,17 +64,12 @@ let g:which_key_map.u = 'undo'
 
 
 " t is for TEMPLATES
-" let g:which_key_map.T = {
-  " \ 'name' : '+templates' ,
-  " \ 'a' : [':read ~/.config/nvim/templates/Apa.tex' , 'Apa.tex'],
-  " \ 'l' : [':read ~/.config/nvim/templates/Letter.tex'    , 'Letter.tex'],
-  " \ 'g' : [':read ~/.config/nvim/templates/Glossary.tex'  , 'Glossary.tex'],
-  " \ 'h' : [':read ~/.config/nvim/templates/HandOut.tex'   , 'HandOut.tex'],
-  " \ 'b' : [':read ~/.config/nvim/templates/PhilBeamer.tex', 'PhilBeamer.tex'],
-  " \ 's' : [':read ~/.config/nvim/templates/SubFile.tex'   , 'SubFile.tex'],
-  " \ 'r' : [':read ~/.config/nvim/templates/Root.tex'      , 'Root.tex'],
-  " \ 'm' : [':read ~/.config/nvim/templates/MultipleAnswer.tex'           , 'MultipleAnswer.tex'],
-  " \ }
+let g:which_key_map.T = {
+  \ 'name' : '+templates' ,
+  \ 'a' : [':TemplateInit apa6', 'Apa'],
+  \ 'k' : [':TemplateInit apaknitr', 'Apa Knitr'],
+  \ 'b' : [':TemplateInit beamer', 'Presentation'],
+  \ }
 
 
 " s is for SESSIONS
