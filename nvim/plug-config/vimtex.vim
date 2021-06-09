@@ -4,7 +4,7 @@ let g:vimtex_view_method = 'skim'
 let g:vimtex_quickfix_mode=0
 
 " Ignore mappings
-let g:vimtex_mappings_enabled = 0
+" let g:vimtex_mappings_enabled = 0
 
 " Error Suppression:
 " https://github.com/lervag/vimtex/blob/master/doc/vimtex.txt

@@ -1,0 +1,22 @@
+% Author     :{{NAME}}
+% Created    :{{TIMESTAMP}}
+% Mail       :{{EMAIL}}
+    
+\documentclass{beamer}
+
+
+\title{Beispieltitel}
+% \shorttitle{Kurztitel}
+\institute{Wer macht wat}
+\date{2021}
+\beamertemplatenavigationsymbolsempty{}
+\setbeamertemplate{itemize items}[circle]
+
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+
+\begin{document}
+
+    \frame{\titlepage}
+
+\end{document}
