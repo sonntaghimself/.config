@@ -6,6 +6,11 @@
 
 % \usepackage[style=apa, backend=biber]{biblatex}
 % \usepackage[american]{babel}
+\usepackage{fancyhdr}
+\usepackage{setspace} %1.5 linespacing
+\usepackage[document]{ragged2e} % \justify for Blocksatz
+
+\onehalfspacing{}
 
 \begin{document}
 

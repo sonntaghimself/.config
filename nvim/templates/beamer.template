@@ -4,6 +4,12 @@
     
 \documentclass[8pt]{beamer}
 
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\usepackage{fancyhdr, graphicx}
+
+\usetheme{metropolis}
+\definecolor{blendedblue}{rgb}{0.2,0.2,0.7} %beamer standard blue
 
 \title{{{CURSOR}}}
 % \shorttitle{Kurztitel}
@@ -11,9 +17,6 @@
 \date{2021}
 \beamertemplatenavigationsymbolsempty{}
 \setbeamertemplate{itemize items}[circle]
-
-\usepackage[utf8]{inputenc}
-\usepackage[german]{babel}
 
 \begin{document}
 
