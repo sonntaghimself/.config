@@ -1,0 +1,12 @@
+% Author     :{{NAME}}
+% Created    :{{TIMESTAMP}}
+% Mail       :{{EMAIL}}
+
+\documentclass[a4paper, 12pt]{proc} 
+
+\begin{document}
+\begin{center}
+    \LARGE{{{CURSOR}}}
+\end{center}
+
+\end{document}

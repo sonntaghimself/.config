@@ -1,0 +1,41 @@
+% Author     :{{NAME}}
+% Created    :{{TIMESTAMP}}
+% Mail       :{{EMAIL}}
+
+\documentclass[a4paper, 12pt]{proc} 
+
+% \usepackage[style=apa, backend=biber]{biblatex}
+% \usepackage[american]{babel}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\usepackage{palatino}
+\usepackage{setspace} %1.5 linespacing
+\usepackage[document]{ragged2e} % \justify for Blocksatz
+
+% \addbibresource{bibfile.bib}
+
+\title{{{CURSOR}}}
+\author{Samuel Sonntag}
+\date{Sommersemester 2021}
+
+\onecolumn
+
+\onehalfspacing{}
+% \doublespacing{}
+
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{Samuel Sonntag}
+\lhead{Praktikumsbericht}
+\rfoot{\thepage}
+
+\begin{document}
+
+\maketitle
+\newpage
+\onecolumn
+\tableofcontents
+\onecolumn
+\justify{}
+
+\end{document}
