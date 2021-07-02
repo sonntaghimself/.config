@@ -5,16 +5,25 @@
 \documentclass[a4paper, 12pt]{proc} 
 
 % \usepackage[style=apa, backend=biber]{biblatex}
-% \usepackage[american]{babel}
+% \usepackage[{{CURSOR}}]{babel}
 \usepackage{fancyhdr}
 \usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{varwidth}
 \usepackage{palatino}
+\usepackage{multicol}
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage{subfig}
+\usepackage{wrapfig}
 \usepackage{setspace} %1.5 linespacing
 \usepackage[document]{ragged2e} % \justify for Blocksatz
 
 % \addbibresource{bibfile.bib}
 
-\title{{{CURSOR}}}
+\newcommand{\tabitem}{~~\llap{\textbullet}~~}
+
+\title{}
 \author{Samuel Sonntag}
 \date{Sommersemester 2021}
 
@@ -36,6 +45,6 @@
 \onecolumn
 \tableofcontents
 \onecolumn
-\justify{}
+% \justify{}
 
 \end{document}

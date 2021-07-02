@@ -69,7 +69,8 @@ let g:which_key_map.T = {
   \ 'a' : [':TemplateInit apa6', 'Apa'],
   \ 'k' : [':TemplateInit apaknitr', 'Apa Knitr'],
   \ 'b' : [':TemplateInit beamer', 'Presentation'],
-  \ 'n' : [':TemplateInit tex', 'normal'],
+  \ 'n' : [':TemplateInit note', 'Note'],
+  \ 'm' : [':TemplateInit minimal', 'minimal'],
   \ }
 
 
