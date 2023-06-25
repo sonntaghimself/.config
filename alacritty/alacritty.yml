@@ -13,22 +13,20 @@ font:
   normal:
     # family: Anonymice Nerd Font Mono
     # family: 3270 Nerd Font Mono
-    family: Lekton Nerd Font Mono
-    # family: Inconsolata Nerd Font Mono
-    # family: Fira Mono Nerd Font Mono
+    # family: Lekton Nerd Font Mono
+    family: Inconsolata Nerd Font Mono
     # family: Hurmit Nerd Font Mono
-    # family: Monofour Nerd Font Mono
     # file: /Library/Fonts/FantasqueSansMNerdFontMono-Regular.ttf
   bold:
-    # family: 3270 Nerd Font Mono
-    family: Lekton Nerd Font Mono
+    family: 3270 Nerd Font Mono
+    # family: Lekton Nerd Font Mono
     # family: Inconsolata Nerd Font Mono
     # family: Anonymice Nerd Font Mono
     # family: Hack Nerd Font Mono
     # family: Victor Mono
   italic:
-    family: Lekton Nerd Font Mono
-    # family: Inconsolata Nerd Font Mono
+    # family: Lekton Nerd Font Mono
+    family: Inconsolata Nerd Font Mono
     # family: Anonymice Nerd Font Mono
     # family: 3270 Nerd Font Mono
     # family: Hack Nerd Font Mono
