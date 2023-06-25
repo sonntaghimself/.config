@@ -1,0 +1,165 @@
+window:
+  padding:
+    x: 5
+    y: 5
+  decorations: buttonless
+  ############################
+  #  none for Linux machine  #
+  ############################
+  # decorations: none           
+  startup_mode: Windowed
+
+font:
+  normal:
+    # family: Anonymice Nerd Font Mono
+    # family: 3270 Nerd Font Mono
+    family: Lekton Nerd Font Mono
+    # family: Inconsolata Nerd Font Mono
+    # family: Fira Mono Nerd Font Mono
+    # family: Hurmit Nerd Font Mono
+    # family: Monofour Nerd Font Mono
+    # file: /Library/Fonts/FantasqueSansMNerdFontMono-Regular.ttf
+  bold:
+    # family: 3270 Nerd Font Mono
+    family: Lekton Nerd Font Mono
+    # family: Inconsolata Nerd Font Mono
+    # family: Anonymice Nerd Font Mono
+    # family: Hack Nerd Font Mono
+    # family: Victor Mono
+  italic:
+    family: Lekton Nerd Font Mono
+    # family: Inconsolata Nerd Font Mono
+    # family: Anonymice Nerd Font Mono
+    # family: 3270 Nerd Font Mono
+    # family: Hack Nerd Font Mono
+    # family: Victor Mono Nerd Font
+    # style: Thin Italic
+
+  size: 18
+  draw_bold_text_with_bright_colors: true
+
+# Enable ligatures
+  # harfbuzz_features:
+  #  - 'liga'
+  #  - 'clig'
+  #  - 'calt'
+  offset:
+   x: 0
+   y: 0
+  glyph_offset:
+   x: 0
+   y: 0
+
+env:
+  TERM: xterm-256color
+
+import:
+  - ~/.config/alacritty/themes/catppuccin/catppuccin-macchiato.yml
+  # - ~/.config/alacritty/themes/themes/gruvbox_material.yml
+  # - ~/.config/alacritty/themes/themes/tokyo-night.yaml
+  # - ~/.config/alacritty/themes/themes/tokyonight_moon.yaml
+  # - ~/.config/alacritty/themes/themes/omni.yml
+
+
+# schemes:
+#
+# Colors (One Dark)
+# colors:
+#   # Default colors
+#   primary:
+#     background: '#1e2127'
+#     foreground: '#abb2bf'
+
+#   # Normal colors
+#   normal:
+#     black:   '#5c6370'
+#     red:     '#e06c75'
+#     green:   '#98c379'
+#     yellow:  '#e5c07b'
+#     blue:    '#61afef'
+#     magenta: '#c678dd'
+#     cyan:    '#56b6c2'
+#     white:   '#abb2bf'
+
+#   # Bright colors
+#   bright:
+#     black:   '#5c6370'
+#     red:     '#e06c75'
+#     green:   '#98c379'
+#     yellow:  '#e5c07b'
+#     blue:    '#61afef'
+#     magenta: '#c678dd'
+#     cyan:    '#56b6c2'
+#     white:   '#ffffff'
+
+#   solarized_light: &light
+#       # Default colors
+#     primary:
+#       background: '#fdf6e3' # base3
+#       foreground: '#657b83' # base00
+
+#     # Cursor colors
+#     cursor:
+#       text:   '#fdf6e3' # base3
+#       cursor: '#657b83' # base00
+
+#     # Normal colors
+#     normal:
+#       black:   '#073642' # base02
+#       red:     '#dc322f' # red
+#       green:   '#859900' # green
+#       yellow:  '#b58900' # yellow
+#       blue:    '#268bd2' # blue
+#       magenta: '#d33682' # magenta
+#       cyan:    '#2aa198' # cyan
+#       white:   '#eee8d5' # base2
+
+#     # Bright colors
+#     bright:
+#       black:   '#002b36' # base03
+#       red:     '#cb4b16' # orange
+#       green:   '#586e75' # base01
+#       yellow:  '#657b83' # base00
+#       blue:    '#839496' # base0
+#       magenta: '#6c71c4' # violet
+#       cyan:    '#93a1a1' # base1
+#       white:   '#fdf6e3' # base3 #
+#   solarized_dark: &dark
+#     primary:
+#       background: '#002b36' # base03
+#       foreground: '#839496' # base0
+
+#     # Cursor colors
+#     cursor:
+#       text:   '#002b36' # base03
+#       cursor: '#839496' # base0
+
+#     # Normal colors
+#     normal:
+#       black:   '#073642' # base02
+#       red:     '#dc322f' # red
+#       green:   '#859900' # green
+#       yellow:  '#b58900' # yellow
+#       blue:    '#268bd2' # blue
+#       magenta: '#d33682' # magenta
+#       cyan:    '#2aa198' # cyan
+#       white:   '#eee8d5' # base2
+
+#     # Bright colors
+#     bright:
+#       black:   '#002b36' # base03
+#       red:     '#cb4b16' # orange
+#       green:   '#586e75' # base01
+#       yellow:  '#657b83' # base00
+#       blue:    '#839496' # base0
+#       magenta: '#6c71c4' # violet
+#       cyan:    '#93a1a1' # base1
+#       white:   '#fdf6e3' # base3 
+
+# colors: *dark
+# # colors: *light
+
+cursor:
+    style: Block
+    unfocused_hollow: true
+alt_send_esc: false
