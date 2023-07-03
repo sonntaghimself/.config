@@ -6,8 +6,20 @@ vim.opt.wrap = true
 vim.opt.textwidth = 80
 vim.opt.clipboard = "unnamedplus"
 vim.opt.tabstop = 2
--- vim.g.R_disable_cmds = "_"
 
+------------------------
+--      cmdline       --
+------------------------
+vim.api.nvim_command("let g:cmdline_vsplit=1")
+vim.api.nvim_command("let g:cmdline_follow_colorscheme=1")
+-- vim.go.cmdline_vsplit = 1
+-- vim.go.cmdline_map_start = "<F5>"
+-- vim.go.cmdline_follow_colorscheme = 1
+-- vim.api.nvim_command('let g: cmdline_app['"python"'] = "ipython"')
+--
+--TODO: not working; figure out how to set these options
+
+vim.api.nvim_command('let g:vimtex_view_method = "skim"')
 -- vim.opt.foldmarker = "# {{{{{,}}}}} #" -- Doesn't work yet
 
 -- vim.o.guifont = "Anonymice nerd font"
@@ -74,4 +86,47 @@ ls.add_snippets("all", {
 
 -- ls.add_snippets("r", {
 --   s({ trig = "pi" }, { "%>%" }),
+-- })
+--
+-- require("catppuccin").setup({
+--   flavour = "frappe", -- latte, frappe, macchiato, mocha
+--   background = { -- :h background
+--     light = "latte",
+--     -- dark = "mocha",
+--     -- dark = "frappe",
+--   },
+--   transparent_background = true, -- disables setting the background color.
+--   show_end_of_buffer = false, -- shows the '~' characters after the end of buffers
+--   term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
+--   dim_inactive = {
+--     enabled = false, -- dims the background color of inactive window
+--     shade = "dark",
+--     percentage = 0.15, -- percentage of the shade to apply to the inactive window
+--   },
+--   no_italic = false, -- Force no italic
+--   no_bold = false, -- Force no bold
+--   no_underline = false, -- Force no underline
+--   styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
+--     comments = { "italic" }, -- Change the style of comments
+--     conditionals = { "italic" },
+--     loops = {},
+--     functions = { "bold" },
+--     keywords = { "bold" },
+--     strings = {},
+--     variables = {},
+--     numbers = {},
+--     booleans = { "bold" },
+--     properties = {},
+--     types = {},
+--     operators = {},
+--   },
+--   integrations = {
+--     cmp = true,
+--     gitsigns = true,
+--     nvimtree = true,
+--     telescope = true,
+--     notify = false,
+--     mini = false,
+--     -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
+--   },
 -- })
