@@ -12,7 +12,9 @@ vim.opt.tabstop = 2
 ------------------------
 vim.api.nvim_command("let g:cmdline_vsplit=1")
 vim.api.nvim_command("let g:cmdline_follow_colorscheme=1")
--- vim.go.cmdline_vsplit = 1
+vim.api.nvim_command("let g:cmdline_term_width=80")
+vim.api.nvim_command("let R_auto_start = 1")
+vim.api.nvim_command("let R_min_editor_width = 80")
 -- vim.go.cmdline_map_start = "<F5>"
 -- vim.go.cmdline_follow_colorscheme = 1
 -- vim.api.nvim_command('let g: cmdline_app['"python"'] = "ipython"')

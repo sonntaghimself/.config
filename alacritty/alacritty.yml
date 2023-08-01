@@ -160,4 +160,4 @@ import:
 cursor:
     style: Block
     unfocused_hollow: true
-alt_send_esc: false
+# alt_send_esc: false
