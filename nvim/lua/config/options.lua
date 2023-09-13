@@ -11,14 +11,13 @@ vim.opt.tabstop = 2
 --      cmdline       --
 ------------------------
 vim.api.nvim_command("let g:cmdline_vsplit=1")
-vim.api.nvim_command("let g:cmdline_follow_colorscheme=1")
+vim.g.cmdline_follow_colorscheme = 0
+-- vim.api.nvim_command("let g:cmdline_follow_colorscheme=1")
 vim.api.nvim_command("let g:cmdline_term_width=80")
+vim.g.cmdline_app = { python = "ipython" }
+vim.api.nvim_command("let g:cmdline_map_send = '<localleader>l' ")
 vim.api.nvim_command("let R_auto_start = 1")
 vim.api.nvim_command("let R_min_editor_width = 80")
--- vim.go.cmdline_map_start = "<F5>"
--- vim.go.cmdline_follow_colorscheme = 1
--- vim.api.nvim_command('let g: cmdline_app['"python"'] = "ipython"')
---
 --TODO: not working; figure out how to set these options
 
 vim.api.nvim_command('let g:vimtex_view_method = "skim"')
