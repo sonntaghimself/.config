@@ -1,5 +1,8 @@
 return {
   "jalvesaq/Nvim-R",
+  config = function()
+    vim.g.R_assign_map = "--"
+  end,
   -- config = {
   --   nmap <F5> <Plug>RStart,
   -- vmap <Space> <Plug>RDSendSelection,

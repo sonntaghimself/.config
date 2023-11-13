@@ -35,6 +35,8 @@ vim.api.nvim_set_keymap("v", "<C-k>", "<cmd> TmuxNavigateUp<CR>", {})
 ------------------------
 --       Nvim-R       --
 ------------------------
-vim.api.nvim_set_keymap("n", ",", "<Plug>RDSendLine", {})
-vim.api.nvim_set_keymap("v", ",", "<Plug>RDSendLine", {})
-vim.g.R_assign_map = "--"
+vim.api.nvim_set_keymap("n", "<localleader>l", "<Plug>RDSendLine", {})
+vim.api.nvim_set_keymap("v", "<localleader>l", "<Plug>RDSendLine", {})
+-- vim.api.nvim_set_keymap("n", "<localleader>,", "<Plug>RDSendLine", {})
+-- vim.api.nvim_set_keymap("v", "<localleader>,", "<Plug>RDSendLine", {})
+-- vim.g.R_assign_map = "--"

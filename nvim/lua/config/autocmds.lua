@@ -9,7 +9,7 @@ vim.api.nvim_create_autocmd(
 
 vim.api.nvim_create_autocmd(
   { "BufRead,BufNewFile" },
-  { pattern = { "*.tex", "*.rnw" }, command = ":set spelllang=en_gb" }
+  { pattern = { "*.tex", "*.rnw" }, command = ":set spelllang=en_us" }
 )
 
 vim.api.nvim_create_autocmd(
