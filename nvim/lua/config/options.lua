@@ -20,9 +20,10 @@ vim.api.nvim_command("let g:cmdline_map_send = '<localleader>l' ")
 vim.api.nvim_command("let R_auto_start = 1")
 vim.api.nvim_command("let R_min_editor_width = 80")
 
---TODO: not working; figure out how to set these options
-
 vim.api.nvim_command('let g:vimtex_view_method = "skim"')
+vim.api.nvim_command(
+  'let g:vimtex_compiler_latexmk = {"aux_dir" : "../AuxFiles/", "out_dir" : "../", "continuous" : 1}'
+)
 
 ------------------------
 --        fold        --

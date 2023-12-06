@@ -16,3 +16,21 @@ vim.api.nvim_create_autocmd(
   { "BufRead,BufNewFile" },
   { pattern = { "*.tex", "*.rnw" }, command = ":set spell" }
 )
+
+-- trying to implement an automatic spelllang setting
+
+-- function FileExists(name)
+--   local f = io.open(name, "r")
+--   if f ~= nil then
+--     io.close(f)
+--     return false
+--   else
+--     return true
+--   end
+-- end
+--
+-- if FileExists("spell.txt") then
+--   local file = io.open("spell.txt", "r")
+--   local contents = file:read("l")
+--   vim.api.nvim_cmd(":set spelllang", contents)
+-- end
