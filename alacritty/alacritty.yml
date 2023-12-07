@@ -1,16 +1,17 @@
 window:
   padding:
-    x: 5
+    x: 0
     y: 5
   decorations: buttonless
   ############################
   #  none for Linux machine  #
   ############################
-  # decorations: none           
+  # decorations: none
   startup_mode: Windowed
 
 font:
   normal:
+    # family: Hack Nerd Font Mono
     # family: Anonymice Nerd Font Mono
     # family: 3270 Nerd Font Mono
     family: Lekton Nerd Font Mono
@@ -18,6 +19,7 @@ font:
     # family: Hurmit Nerd Font Mono
     # file: /Library/Fonts/FantasqueSansMNerdFontMono-Regular.ttf
   bold:
+    # family: Hack Nerd Font Mono
     # family: 3270 Nerd Font Mono
     family: Lekton Nerd Font Mono
     # family: Inconsolata Nerd Font Mono
@@ -25,6 +27,7 @@ font:
     # family: Hack Nerd Font Mono
     # family: Victor Mono
   italic:
+    # family: Hack Nerd Font Mono
     family: Lekton Nerd Font Mono
     # family: Inconsolata Nerd Font Mono
     # family: Anonymice Nerd Font Mono
@@ -36,28 +39,31 @@ font:
   size: 18
   draw_bold_text_with_bright_colors: true
 
-# Enable ligatures
+  # Enable ligatures
   # harfbuzz_features:
   #  - 'liga'
   #  - 'clig'
   #  - 'calt'
   offset:
-   x: 0
-   y: 0
+    x: 0
+    y: 0
   glyph_offset:
-   x: 0
-   y: 0
+    x: 0
+    y: 0
 
 env:
   TERM: xterm-256color
 
 import:
-  - ~/.config/alacritty/themes/catppuccin/catppuccin-macchiato.yml
+  # - ~/.config/alacritty/themes/catppuccin/catppuccin-macchiato.yml
+  # - ~/.config/alacritty/themes/catppuccin/catppuccin-mocha.yml
+  # - ~/.config/alacritty/themes/catppuccin/catppuccin-frappe.yml
   # - ~/.config/alacritty/themes/themes/gruvbox_material.yml
   # - ~/.config/alacritty/themes/themes/tokyo-night.yaml
   # - ~/.config/alacritty/themes/themes/tokyonight_moon.yaml
   # - ~/.config/alacritty/themes/themes/omni.yml
-
+  # - ~/.config/alacritty/themes/themes/falcon.yaml
+  - ~/.config/alacritty/themes/melange_dark.yml
 
 # schemes:
 #
@@ -152,12 +158,12 @@ import:
 #       blue:    '#839496' # base0
 #       magenta: '#6c71c4' # violet
 #       cyan:    '#93a1a1' # base1
-#       white:   '#fdf6e3' # base3 
+#       white:   '#fdf6e3' # base3
 
 # colors: *dark
 # # colors: *light
 
 cursor:
-    style: Block
-    unfocused_hollow: true
+  style: Block
+  unfocused_hollow: true
 # alt_send_esc: false

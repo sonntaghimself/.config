@@ -6,6 +6,8 @@ vim.opt.wrap = true
 vim.opt.textwidth = 80
 vim.opt.clipboard = "unnamedplus"
 vim.opt.tabstop = 2
+vim.opt.termguicolors = true
+-- vim.cmd.colorscheme("melange")
 
 ------------------------
 --      cmdline       --

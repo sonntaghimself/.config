@@ -1,6 +1,6 @@
 return {
   "catppuccin/nvim",
-  lazy = false,
+  lazy = true,
   name = "catppuccin",
   flavour = "latte", -- latte, frappe, macchiato, mocha
   opts = {
@@ -36,7 +36,7 @@ return {
         dark = "frappe",
       },
     },
-    transparent_background = true, -- disables setting the background color.
+    transparent_background = false, -- disables setting the background color.
     term_colors = false, -- sets terminal colors (e.g. `g:terminal_color_0`)
     no_italic = false, -- Force no italic
     no_bold = false, -- Force no bold
