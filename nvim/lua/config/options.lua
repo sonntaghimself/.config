@@ -30,16 +30,4 @@ vim.api.nvim_command(
 ------------------------
 --        fold        --
 ------------------------
--- vim.opt.fillchars = {
--- foldopen = "",
--- foldclose = "",
--- foldopen = "{{{",
--- foldclose = "}}}",
--- -- fold = "⸱",
--- fold = " ",
--- foldsep = " ",
--- diff = "╱",
--- eob = " ",
--- }
-
 vim.opt.foldmethod = "marker"
