@@ -4,10 +4,7 @@ return {
     version = "2", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
     build = "make install_jsregexp",
     config = function()
-      require("luasnip.loaders.from_snipmate").load()
-      require("luasnip.loaders.from_snipmate").lazy_load("~/.config/nvim/snippets/r.snippets")
-      require("luasnip.loaders.from_snipmate").lazy_load("~/.config/nvim/snippets/tex.snippets")
-      require("luasnip.loaders.from_snipmate").lazy_load("~/.config/nvim/snippets/py.snippets")
+      require("luasnip.loaders.from_snipmate").load("~/.config/nvim/snippets/")
 
       local ls = require("luasnip")
       local s = ls.snippet
@@ -59,7 +56,7 @@ return {
 
       ls.add_snippets("all", {
         -- https://github.com/L3MON4D3/LuaSnip/wiki/Cool-Snippets#box-comment-like-ultisnips
-        s({ trig = "box" }, box({ box_width = 24 })),
+        s({ trig = "box" }, box({ box_width = 48 })),
         s({ trig = "bbox" }, box({})),
       })
     end,
@@ -67,11 +64,11 @@ return {
     --   return {}
     -- end,
   },
-
   {
     "hrsh7th/nvim-cmp",
     version = false, -- last release is way too old
     event = "InsertEnter",
+    lazy = false,
     dependencies = {
       "hrsh7th/cmp-nvim-lsp",
       "hrsh7th/cmp-buffer",

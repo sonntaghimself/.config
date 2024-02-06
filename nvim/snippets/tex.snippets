@@ -2,10 +2,10 @@ snippet ra "rightarrow"
   \$\rightarrow$ ${0}
 
 snippet eql Labeled equation environment
-	\\begin{equation}
-		\\label{eq:${2}}
-		${0:${VISUAL}}
-	\\end{equation}
+  \\begin{equation}
+    \\label{eq:${2}}
+    ${0:${VISUAL}}
+  \\end{equation}
 
 snippet lra "longrightarrow"
   \$\longrightarrow$ ${0}
@@ -44,10 +44,10 @@ snippet cl "Text in colour"
 
 snippet wfi "wrap text around a figure"
   \\begin{wrapfigure}{l}{${1:0.5}\textwidth}
-  	\\centering
-  	\\includegraphics[width=0.95\linewidth]{${2:figure name}}
-  	\\caption{${3:some text}}%
-  	\\label{fig:${4:$3}}
+    \\centering
+    \\includegraphics[width=0.95\linewidth]{${2:figure name}}
+    \\caption{${3:some text}}%
+    \\label{fig:${4:$3}}
   \\end{wrapfigure}
   ${0}
 
@@ -67,7 +67,7 @@ snippet deg "degree symbol"
   \$^\circ$ ${0}
 
 snippet clr "writing in colour"
-  \{\color{${1:colour}}{$2}} ${0}
+  {\color{${1:colour}}{$2}} ${0}
 
 snippet rharp "rightharpoonup"
   \$\rightharpoonup$ ${0}
@@ -96,9 +96,6 @@ snippet ca "cite author; bibtex"
 snippet Se "R expression"
   \\Sexpr{$0}
 
-snippet ita "italic text"
-  \\textit{$0}
-
 snippet -- "arrow"
   \ <- {$0}
 
@@ -113,11 +110,11 @@ snippet strn "numberstring; for actual numbers"
 
 snippet lta "longtable; acutally works with apa"
   \\begin{longtable}{${1}}%
-  	\\label{tab:${2}}
-  	\\caption{${3}}\\
-  	\\hline
-  	${0}
-  	\\hline
+    \\label{tab:${2}}
+    \\caption{${3}}\\
+    \\hline
+    ${0}
+    \\hline
   \\end{longtable}
 
 snippet Fo "Folie"
@@ -127,19 +124,19 @@ snippet Fo "Folie"
 
 snippet mi "minipage"
   \\begin{minipage}{${1}\linewidth}
-  	${0}
+    ${0}
   \\end{minipage}
   \{\captionof{}{}}%
   \\label{}
 
 snippet on "On which slide should this be displayed"
   \\onslide<${1}->{
-  	${0}
+    ${0}
   }
 
 snippet oy "On which slide should this only be displayed"
   \\only<${1}>{
-  	${0}
+    ${0}
   }
 
 snippet pe "p-Value"
@@ -150,26 +147,26 @@ snippet ps "p-Value"
 
 snippet fa "Fraction that is aligned like a tab"
   \\begin{flalign*}
-  	${0}
+    ${0}
   \\end{flalign*}
 
 snippet tpt "threeparttable for apa documents"
   \\begin{table}[htpb]
-  	\\centering
-  	% \\setlength{\tabcolsep}{10pt} % Default value: 6pt
-  	\\renewcommand{\arraystretch}{1.5} % Default value: 1
-  	\\begin{threeparttable}
-  		\\caption{${1}}%
-  		\\label{tab:${2}}\\\
-  		\\begin{tabular}{@{}${3}@{}}
-  		\\toprule
-  		${0}
-  		\\midrule
-  		\\bottomrule
-  		\\end{tabular}
-  		\\vspace*{.25cm}
-  		\\tablenote{}
-  	\\end{threeparttable}
+    \\centering
+    % \\setlength{\tabcolsep}{10pt} % Default value: 6pt
+    \\renewcommand{\arraystretch}{1.5} % Default value: 1
+    \\begin{threeparttable}
+      \\caption{${1}}%
+      \\label{tab:${2}}\\\
+      \\begin{tabular}{@{}${3}@{}}
+      \\toprule
+      ${0}
+      \\midrule
+      \\bottomrule
+      \\end{tabular}
+      \\vspace*{.25cm}
+      \\tablenote{}
+    \\end{threeparttable}
   \\end{table}
 
 snippet under "Underline text"

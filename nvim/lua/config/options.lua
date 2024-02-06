@@ -7,6 +7,8 @@ vim.opt.textwidth = 80
 vim.opt.clipboard = "unnamedplus"
 vim.opt.tabstop = 2
 vim.opt.termguicolors = true
+
+vim.g.tex_flavour = "latex"
 -- vim.cmd.colorscheme("melange")
 
 ------------------------
