@@ -10,7 +10,6 @@ vim.api.nvim_create_autocmd(
 
 vim.api.nvim_create_autocmd(
   { "BufRead", "BufNewFile", "BufEnter" },
-  -- { "BufRead,BufNewFile,BufEnter" },
   { pattern = { "*.tex", "*.rnw" }, command = ":set spell" }
 )
 
@@ -37,7 +36,7 @@ if file then
   file:close()
 
   contents = contents:match("^%s*(.-)%s*$")
-  vim.api.nvim_create_autocmd({ "BufRead,BufNewFile,BufEnter" }, {
+  vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile", "BufEnter" }, {
     pattern = { "*.tex", "*.Rnw", "*.txt" },
     command = ":set spelllang=" .. contents,
   })

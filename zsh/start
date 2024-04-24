@@ -1,1 +1,1 @@
-figlet The more you fuck around \.\.\. | cowsay -n -f head-in | lolcat
+figlet The more you fuck around \.\.\. | cowsay -n -f head-in | lolcat -f

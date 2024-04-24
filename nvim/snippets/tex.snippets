@@ -24,11 +24,19 @@ snippet gr "Graphic"
   \\end{$1}
 
 snippet twof "Two figures Side by side"
-  \\begin{figure}[h]%
-  	\\centering
-  	\\subfloat{\includegraphics[width=${1:how wide?}\textwidth]{$3}}%
-  	\\qquad
-  	\\subfloat{\includegraphics[width=${2: how wide?}\textwidth]{$4}}
+  \\begin{figure}
+  	\\begin{subfigure}[h]{0.45\linewidth}
+  		\\includegraphics[width=\linewidth]{example-image-a}
+  		\\caption{}%
+  		\\label{subfig:}
+  	\\end{subfigure}
+  	\\hfill
+  	\\begin{subfigure}[h]{0.45\linewidth}
+  		\\includegraphics[width=\linewidth]{example-image-b}
+  		\\caption{Accuracy}%
+  		\\label{subfig:}
+  	\\end{subfigure}%
+  	\\caption{}
   \\end{figure}
 
 snippet fbox "framed box, as wide as the text"
@@ -157,7 +165,7 @@ snippet tpt "threeparttable for apa documents"
     \\renewcommand{\arraystretch}{1.5} % Default value: 1
     \\begin{threeparttable}
       \\caption{${1}}%
-      \\label{tab:${2}}\\\
+      \\label{tab:${2}}
       \\begin{tabular}{@{}${3}@{}}
       \\toprule
       ${0}

@@ -3,18 +3,18 @@
 -- Add any additional keymaps here
 
 -- vim.g.mapleader = ":"
-vim.g.maplocalleader = ","
+-- vim.g.maplocalleader = ","
 ------------------------
 --     arrow keys     --
 ------------------------
-vim.api.nvim_set_keymap("n", "Up", "", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "Down", "", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "Right", "", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("n", "Left", "", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "Up", "", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "Down", "", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "Right", "", { noremap = true, silent = true })
-vim.api.nvim_set_keymap("i", "Left", "", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Up>", "", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Down>", "", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Right>", "", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("n", "<Left>", "", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<Up>", "", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<Down>", "", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<Right>", "", { noremap = true, silent = true })
+vim.api.nvim_set_keymap("i", "<Left>", "", { noremap = true, silent = true })
 
 ------------------------
 --      tmux nav      --
@@ -40,3 +40,8 @@ vim.api.nvim_set_keymap("v", "<localleader>l", "<Plug>RDSendLine", {})
 -- vim.api.nvim_set_keymap("n", "<localleader>,", "<Plug>RDSendLine", {})
 -- vim.api.nvim_set_keymap("v", "<localleader>,", "<Plug>RDSendLine", {})
 -- vim.g.R_assign_map = "--"
+
+------------------------------------------------
+--                  copilot                   --
+------------------------------------------------
+vim.keymap.set("i", "<Left>", "<Plug>(copilot-accept-word)")
