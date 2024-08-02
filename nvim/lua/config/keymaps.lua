@@ -44,4 +44,4 @@ vim.api.nvim_set_keymap("v", "<localleader>l", "<Plug>RDSendLine", {})
 ------------------------------------------------
 --                  copilot                   --
 ------------------------------------------------
-vim.keymap.set("i", "<Left>", "<Plug>(copilot-accept-word)")
+-- vim.keymap.set("i", "<Left>", "<Plug>(copilot-accept-word)")

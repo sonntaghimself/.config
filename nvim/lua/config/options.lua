@@ -24,7 +24,6 @@ vim.api.nvim_command("let g:cmdline_map_start = '<leader>s' ")
 vim.api.nvim_command("let g:cmdline_map_send = '<localleader>l' ")
 vim.api.nvim_command("let R_auto_start = 1")
 vim.api.nvim_command("let R_min_editor_width = 80")
-
 vim.api.nvim_command('let g:vimtex_view_method = "skim"')
 vim.api.nvim_command(
   'let g:vimtex_compiler_latexmk = {"aux_dir" : "../AuxFiles/", "out_dir" : "../", "continuous" : 1}'
@@ -34,3 +33,6 @@ vim.api.nvim_command(
 --        fold        --
 ------------------------
 vim.opt.foldmethod = "marker"
+
+----------------- grammarous -----------------
+-- vim.g.grammarous_jar_url = "https://www.languagetool.org/download/LanguageTool-5.9.zip"

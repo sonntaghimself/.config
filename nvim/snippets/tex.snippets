@@ -20,7 +20,10 @@ snippet hea "A header"
 
 snippet gr "Graphic"
   \\begin{${1:center, flushleft or flushright}}
-  	\\includegraphics[width=\textwidth]{${0:graphic name}}
+  	\\includegraphics[width=\textwidth]{${0:graphic name}}%
+		\\captionsettings{width=\textwidth}
+		\\caption{$2}%
+		\\label{fig:$2}
   \\end{$1}
 
 snippet twof "Two figures Side by side"
@@ -93,7 +96,7 @@ snippet ct "cite in text; bibtex"
   \\textcite{$0}
 
 snippet cp "cite in parenthesis; bibtex"
-  \\parencite[${1}][${2}]{$0}
+  \\parencite[][]{$0}
 
 snippet cy "cite year; bibtex"
   \\citeyear{$0}
@@ -182,3 +185,27 @@ snippet under "Underline text"
 
 snippet enq "Enquote text"
   \\enquote{${0}}
+
+snippet * "italic"
+	\\textit{${0}}
+
+snippet ** "bold"
+	\\textbf{${0}}
+
+snippet *** "under"
+	\\underline{${0}}
+
+snippet reffig "reference to a figure"
+ 	Figure~\ref{fig:${0}}
+
+snippet refsubfig "reference to a figure"
+ 	Figure~\ref{subfig:${0}}
+
+snippet reftab "reference to a table"
+ 	Table~\ref{tab:${0}}
+
+snippet refsec "reference to a section"
+ 	Section~\ref{sec:${0}}
+
+# snippet sec "an actual section"
+# 	\\section{}
